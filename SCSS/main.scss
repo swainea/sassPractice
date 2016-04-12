@@ -1,0 +1,42 @@
+@import "mixins";
+@import "partials";
+
+$themeDark: blue;
+$themeLight: #ddddff;
+
+$pageWidth: 800px; //setting this and then using mathmatical expressions to breakdown the size of sections is awesome
+
+.wrapper {
+  width: $pageWidth;
+  margin: 0 auto;
+}
+
+article {
+  width: $pageWidth * 0.66;
+}
+
+nav {
+  border-bottom: 2px solid #666;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li{
+    display: inline-block;
+    padding: .5em 1em;
+    background-color: $themeLight;
+    height: 4em;
+    width: 4em;
+    border: 1px solid $themeDark;
+    box-sizing: border-box;
+    @include square($pageWidth * .2);
+
+    &.first{
+      background-color: $themeDark
+    }
+  }
+}
+//remember nesting and that & is the parent selector
+// :visited, :hover, :active is a pseudo-class to remember

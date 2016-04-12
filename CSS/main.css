@@ -1,0 +1,26 @@
+.wrapper {
+  width: 800px;
+  margin: 0 auto; }
+
+article {
+  width: 528px; }
+
+nav {
+  border-bottom: 2px solid #666; }
+  nav ul {
+    margin: 0;
+    padding: 0; }
+  nav li {
+    display: inline-block;
+    padding: .5em 1em;
+    background-color: #ddddff;
+    height: 4em;
+    width: 4em;
+    border: 1px solid blue;
+    box-sizing: border-box;
+    height: 160px;
+    width: 160px; }
+    nav li.first {
+      background-color: blue; }
+
+/*# sourceMappingURL=main.css.map */
